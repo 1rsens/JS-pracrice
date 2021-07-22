@@ -1,0 +1,163 @@
+body {
+    background: #e1dcd8;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+.intro h1 {
+    margin: 10px 0 30px;
+    color: #3a3a3a;
+    font-size: 50px;
+    font-family: 'Encode Sans SC', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+p {
+    font-weight: 600;
+}
+
+#inputs {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#inputs>div {
+    width: 100%;
+}
+
+.color-1 {
+    background-color: #ff535a;
+}
+
+.color-1:hover,
+.color-1.done {
+    background-color: #cd2e34;
+}
+
+.color-2 {
+    background-color: #e745aa;
+}
+
+.color-2:hover,
+.color-2.done {
+    background-color: #9b266f;
+}
+
+.color-3 {
+    background-color: #802eff;
+}
+
+.color-3:hover,
+.color-3.done {
+    background-color: #571db2;
+}
+
+.color-4 {
+    background-color: #1d7dff;
+}
+
+.color-4:hover,
+.color-4.done {
+    background-color: #24579d;
+}
+
+.color-5 {
+    background-color: #44bbf8;
+}
+
+.color-5:hover,
+.color-5.done {
+    background-color: #2b86b5;
+}
+
+#enter {
+    background-color: #ADB668;
+    color: #fff;
+    height: 44px;
+    width: 44px;
+    border: none;
+    font-size: 25px;
+    padding: 0;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75 ease;
+    font-weight: normal;
+}
+
+#enter:hover {
+    background-color: #79B668;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+@keyframes li-enter {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+li {
+    list-style: none;
+    padding: 12px 10px;
+    color: #ffffff;
+    background-color: #48361fc7;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    transition: all 0.82s ease-in-out;
+    -webkit-transition: all 0.82s ease-in-out;
+    -moz-transition: all 0.82s ease-in-out;
+    -ms-transition: all 0.82s ease-in-out;
+    -o-transition: all 0.82 ease-in-out;
+    animation: 0.7s linear li-enter;
+    position: relative;
+}
+
+li.done {
+    text-decoration: line-through;
+}
+
+li:hover {
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+li>button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    height: 44px;
+    background-color: #d8bb3ed4;
+    color: #000;
+    border: none;
+}
+
+input::placeholder {
+    color: #000;
+}
